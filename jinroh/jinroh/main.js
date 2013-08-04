@@ -11,11 +11,16 @@
  * @Extends Backbone.model
  */
 var Player = Backbone.Model.extend({// instance property
+	defaults : {
+		name : "Anonymous",// 名無しさん
+		role : 0
+	// 村人がデフォ
+	},
+
 	initialize : function(name, role) {
 
 	},
-	name : "",
-	role : 0
+
 }, {// class property
 	ROLE_VILLAGER : 0,
 	ROLE_WEREWOLF : 1,
