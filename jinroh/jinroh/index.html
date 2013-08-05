@@ -7,7 +7,9 @@
 <script src="lib/underscore-min.js"></script>
 <script src="lib/backbone-min.js"></script>
 <script type="text/javascript" src="main.js"></script>
+<script src="bootstrap/js/bootstrap.js"></script>
 <link rel="StyleSheet" href="main.css" />
+<link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
 </head>
 <body>
 <h1>人狼―Jinroh</h1>
@@ -15,20 +17,48 @@
 <p>Art thee a werewolf?<br />
 ―汝は人狼なりや？</p>
 <div id="config">
-	<ul id="config-main">
-		<li>総人数：<input type="number" />人<input type="button" value="auto"/></li>
-		<li>村人　　<input type="number" />人</li>
-		<li>オオカミ<input type="number" />人</li>
-		<li>占い　　<input type="number" />人</li>
-	</ul>
-	<input type="checkbox" id="show-option"/>オプションの役職を設定する
-	<ul class="first-hidden" id="config-option">
-		<li><input type="checkbox" />霊能者<input type="number" />人</li>
-		<li><input type="checkbox" />狩人　<input type="number" />人</li>
-		<li><input type="checkbox" />狂人　<input type="number" />人</li>
-		<li><input type="checkbox" />猫　　<input type="number" />人</li>
-		<li><input type="checkbox" />狐　　<input type="number" />人</li>
-	</ul>
+	<form action="#" class="form-horizontal">
+		<fieldset class="">
+			<div class="control-group">
+				<label for="player-total" class="control-label">総人数</label>
+				<div class="controls"><input type="number" name="" id="player-total" />人</div>
+			</div>
+			<div class="control-group">
+				<label for="role-custom" class="control-label">役職の人数をカスタマイズする</label>
+				<div class="controls"><input type="checkbox" name="" id="role-custom" /></div>
+			</div>
+		</fieldset>
+		<fieldset class="hidden-first">
+			<div class="control-group">
+				<label for="teller-total" class="control-label">占い</label>
+				<div class="controls"><input type="number" name="" id="teller-total" /></div>
+			</div>
+			<div class="control-group">
+				<label for="hunter-total" class="control-label">狩人</label>
+				<div class="controls"><input type="number" name="" id="hunter-total" /></div>
+			</div>
+			<div class="control-group">
+				<label for="psychic-total" class="control-label">霊能者</label>
+				<div class="controls"><input type="number" name="" id="psychic-total" /></div>
+			</div>
+			<div class="control-group">
+				<label for="insane-total" class="control-label">狂人</label>
+				<div class="controls"><input type="number" name="" id="insane-total" /></div>
+			</div>
+			<div class="control-group">
+				<label for="cat-total" class="control-label">猫</label>
+				<div class="controls"><input type="number" name="" id="cat-total" /></div>
+			</div>
+			<div class="control-group">
+				<label for="fox-total" class="control-label">狐</label>
+				<div class="controls"><input type="number" name="" id="fox-total" /></div>
+			</div>
+			<div class="form-actions">
+				<button type="submit" class="btn btn-primary">この人数でゲーム開始</button>
+			</div>
+		</fieldset>
+	</form>
 </div>
+
 </body>
 </html>
