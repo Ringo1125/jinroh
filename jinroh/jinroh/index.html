@@ -10,6 +10,7 @@
 <script src="bootstrap/js/bootstrap.js"></script>
 <link rel="StyleSheet" href="main.css" />
 <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+
 </head>
 <body>
 <header>
@@ -22,7 +23,7 @@
 <div class="row-fluid">
 <div id="config" class="span8 offset2">
 	<form action="#" class="form-horizontal">
-		<fieldset class="">
+		<fieldset id="config-number-main">
 			<div class="control-group">
 				<label for="player-total" class="control-label">総人数</label>
 				<div class="controls"><input type="number" name="" id="player-total" />人</div>
@@ -32,7 +33,15 @@
 				<div class="controls"><input type="checkbox" name="" id="role-custom" /></div>
 			</div>
 		</fieldset>
-		<fieldset class="hidden-first">
+		<fieldset class="hidden-first" id="config-number-option">
+			<div class="control-group">
+				<label for="villager-total" class="control-label">村人</label>
+				<div class="controls"><input type="number" name="" id="villager-total" /></div>
+			</div>
+			<div class="control-group">
+				<label for="werewolf-total" class="control-label">人狼</label>
+				<div class="controls"><input type="number" name="" id="werewolf-total" /></div>
+			</div>
 			<div class="control-group">
 				<label for="teller-total" class="control-label">占い</label>
 				<div class="controls"><input type="number" name="" id="teller-total" /></div>
