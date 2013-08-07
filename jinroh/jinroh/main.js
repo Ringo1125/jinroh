@@ -2,6 +2,12 @@
  * 2013/08/01 by Ringo1125
  */
 /**
+ * @class MyControler windowに紐づけしてどこからでも呼べるようにする
+ */
+window.MyControler = {
+
+};
+/**
  * @class Player describes player of this game.
  * @Constructor
  * @param {String}name
