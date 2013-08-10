@@ -34,6 +34,8 @@ var Player = Backbone.Model.extend({// instance property
 	ROLE_FORTUNETELLER : 3,
 	ROLE_HUNTER : 4,
 	ROLE_INSANE : 5,
+	ROLE_CAT : 6,
+	ROLE_FOX : 7
 });
 /**
  * @Class GameRoom
