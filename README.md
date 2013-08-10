@@ -1,11 +1,11 @@
-jinroh
+人狼
 ======
 
-making "Jinroh"(werewolf game) by HTML5/CSS3 &amp; Javascript.
+ HTML5/CSS3 &amp; Javascriptで人狼を作ってみる
 
-#To Do List
+#やること
 * learn backbone.js
 * making class:Player
 
-#Things accomplished
+#できたこと
 * nothing yet....
