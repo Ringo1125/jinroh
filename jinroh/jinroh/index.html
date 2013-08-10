@@ -7,11 +7,21 @@
 <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
 
 <script src="lib/jquery-2.0.2.min.js"></script>
-<script src="lib/underscore-min.js"></script>
+ <!--<script src="lib/underscore-min.js"></script>
 <script src="lib/backbone-min.js"></script>
-<script type="text/javascript" src="main.js"></script>
+<script type="text/javascript" src="main.js"></script> -->
 <script src="bootstrap/js/bootstrap.js"></script>
-<script src="test.js"></script>
+<script src="lib/mustache.js"></script>
+<script >$(document).ready(function($) {
+	alert("get ready");
+	var template = '<p>' + '<h1>hi!{{name}}!</h1><hr />' + 'test</p>';
+	var html = Mustache.to_html(template, {
+		name : "mustache"
+	});
+	$("#register").append(html);
+	
+});
+</script>
 </head>
 <body>
 	<header>
