@@ -1,5 +1,5 @@
 /**
- * jinroh/test.js 2013/08/07 by Yukino
+ * jinroh/test.js 2013/08/07 by Ringo1125
  */
 $(document).ready(function($) {
 	// alert("get ready");
