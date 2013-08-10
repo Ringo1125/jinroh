@@ -2,7 +2,7 @@
  * jinroh/test.js 2013/08/07 by Yukino
  */
 $(document).ready(function($) {
-	alert("get ready");
+	// alert("get ready");
 	$("#role-custom").click(function() {
 		// alert("checked");
 		if (this.checked) {
