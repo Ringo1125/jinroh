@@ -10,3 +10,6 @@ header{
 	border-color: blue;
 	background-color: red;
 }
+.hidden-first{
+	display: none;
+}
